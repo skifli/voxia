@@ -1,0 +1,12 @@
+CompileFlags:
+  Add: [-std=c17, -Wall, -Wextra]
+Diagnostics:
+  Suppress:
+    [
+      missing-prototypes,
+      empty-translation-unit,
+      cast-qual,
+      unused-includes,
+      padded,
+      unsafe-buffer-usage,
+    ]

@@ -1,0 +1,7 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+UseTab: Never
+ColumnLimit: 125
+ReflowComments: true
+BreakBeforeBraces: Attach
+AllowShortIfStatementsOnASingleLine: Never
