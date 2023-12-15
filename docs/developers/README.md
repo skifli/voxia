@@ -3,6 +3,7 @@
 - [🛠️ Developer Documentation](#️-developer-documentation)
   - [🖥️ Environment Setup](#️-environment-setup)
     - [Cloning the Repository](#cloning-the-repository)
+  - [PATH](#path)
 
 ## 🖥️ Environment Setup
 
@@ -20,3 +21,7 @@ To clone the repository, run the following command:
 ```bash
 git clone https://github.com/skifli/voxia
 ```
+
+## PATH
+
+Add *`C:\raylib\w64devkit\bin`* to your PATH environment variable.
