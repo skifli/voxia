@@ -10,23 +10,23 @@
             "args": [
                 "PLATFORM=PLATFORM_DESKTOP",
                 "BUILD_MODE=DEBUG",
-                "PROJECT_NAME=${fileBasenameNoExtension}",
-                "OBJS=${fileBasenameNoExtension}.c"
+                "PROJECT_NAME=voxia",
+                "OBJS=src/main.c"
             ],
             "windows": {
                 "command": "mingw32-make.exe",
                 "args": [
                     "RAYLIB_PATH=C:/raylib/raylib",
-                    "PROJECT_NAME=${fileBasenameNoExtension}",
-                    "OBJS=${fileBasenameNoExtension}.c",
+                    "PROJECT_NAME=voxia",
+                    "OBJS=src/main.c",
                     "BUILD_MODE=DEBUG"
                 ],
             },
             "osx": {
                 "args": [
                     "RAYLIB_PATH=<path_to_raylib>/raylib",
-                    "PROJECT_NAME=${fileBasenameNoExtension}",
-                    "OBJS=${fileBasenameNoExtension}.c",
+                    "PROJECT_NAME=voxia",
+                    "OBJS=src/main.c",
                     "BUILD_MODE=DEBUG"
                 ],
             },
@@ -38,34 +38,5 @@
                 "$gcc"
             ]
         },
-        {
-            "label": "build release",
-            "type": "process",
-            "command": "make",
-            "args": [
-                "PLATFORM=PLATFORM_DESKTOP",
-                "PROJECT_NAME=${fileBasenameNoExtension}",
-                "OBJS=${fileBasenameNoExtension}.c"
-            ],
-            "windows": {
-                "command": "mingw32-make.exe",
-                "args": [
-                    "RAYLIB_PATH=C:/raylib/raylib",
-                    "PROJECT_NAME=${fileBasenameNoExtension}",
-                    "OBJS=${fileBasenameNoExtension}.c"
-                ],
-            },
-            "osx": {
-                "args": [
-                    "RAYLIB_PATH=<path_to_raylib>/raylib",
-                    "PROJECT_NAME=${fileBasenameNoExtension}",
-                    "OBJS=${fileBasenameNoExtension}.c"
-                ],
-            },
-            "group": "build",
-            "problemMatcher": [
-                "$gcc"
-            ]
-        }
     ]
 }
