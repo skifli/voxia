@@ -2,6 +2,7 @@
 	"[c]": {
 		"editor.defaultFormatter": "xaver.clang-format"
 	},
+	"cmake.configureOnOpen": true,
 	"cmake.preferredGenerators": [
 		"Ninja",
 		"Visual Studio 17 2022",
@@ -11,10 +12,14 @@
 	"editor.fontSize": 13,
 	"editor.formatOnSave": true,
 	"editor.suggest.localityBonus": true,
+	"explorer.compactFolders": false,
+	"files.exclude": {
+		"**/voxia.exe": true,
+		"**/voxia": true,
+	},
 	"git.enableSmartCommit": true,
 	"git.confirmSync": false,
 	"git.autofetch": true,
 	"workbench.colorTheme": "Dainty – One Dark Pro (chroma 0, lightness 1)",
 	"workbench.iconTheme": "material-icon-theme",
-	"cmake.configureOnOpen": true,
 }
