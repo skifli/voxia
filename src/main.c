@@ -7,7 +7,7 @@
 
 #define ASSETS_DIR "./assets"
 #define ASEPRITE_DIR ASSETS_DIR "/aseprite"
-#define WORLDS_DIR ASSETS_DIR "/worlds"
+#define WORLDS_DIR "./worlds"
 
 int main(int argc, char **argv) {
     struct Worlds *worlds = worlds_new(WORLDS_DIR);

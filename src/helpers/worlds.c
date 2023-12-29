@@ -1,10 +1,13 @@
 #pragma once
 
 #include <dirent.h>
+#include <stdio.h>
 
+#include "../components/level.c"
 #include "../components/world.c"
 #include "../utils/array.c"
 #include "../utils/panic.c"
+#include "./world.c"
 
 /**
  * Represents a collection of worlds.
@@ -41,7 +44,8 @@ struct Worlds *worlds_new(char *worldsDirPath) {
 
     struct dirent *entry;
 
-    while ((entry = readdir(worldsDir)) != NULL) {
+    while ((entry = readdir(worldsDir)) != NULL) { // iterate over worlds directory
+        struct World *world = parse_world(entry->d_name);
     }
 
     closedir(worldsDir);

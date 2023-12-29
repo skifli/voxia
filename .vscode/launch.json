@@ -9,8 +9,8 @@
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}/run",
             "environment": [],
-            "console": "integratedTerminal",
-            "preLaunchTask": "build debug"
+            "console": "externalTerminal",
+            "preLaunchTask": "build debug",
         },
         {
             "name": "(Unix) Launch",
@@ -21,8 +21,8 @@
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}/run",
             "environment": [],
-            "console": "integratedTerminal",
-            "preLaunchTask": "build debug"
+            "console": "externalTerminal",
+            "preLaunchTask": "build debug",
         },
     ]
 }
