@@ -1,17 +1,20 @@
 #include "raylib.h"
-#include "raymath.h"
 
-#include "./components/camera.c"
-#include "./components/player.c"
-#include "./helpers/worlds.c"
+#if defined(PLATFORM_WEB)
+#include <emscripten/emscripten.h>
+#endif
 
-#define ASSETS_DIR "./assets"
-#define ASEPRITE_DIR ASSETS_DIR "/aseprite"
-#define WORLDS_DIR "./worlds"
+int main(void) {
+    InitWindow(800, 450, "raylib [core] example - basic window");
 
-int main(int argc, char **argv) {
-    struct Worlds *worlds = worlds_new(WORLDS_DIR);
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
+        DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+        EndDrawing();
+    }
 
-    InitWindow(800, 450, "Voxia");
-    SetTargetFPS(60);
+    CloseWindow();
+
+    return 0;
 }

@@ -1,0 +1,16 @@
+{
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {
+            "password": "clangIsBetterThanGCC"
+        }
+    },
+    "forwardPorts": [
+        6080
+    ],
+    "portsAttributes": {
+        "6080": {
+            "label": "desktop"
+        }
+    },
+    "onCreateCommand": "sudo apt update && sudo apt install xorg-dev libglu1-mesa-dev ninja-build -y"
+}
