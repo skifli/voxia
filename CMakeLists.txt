@@ -44,7 +44,7 @@ endif()
 # Voxia Configuration
 
 set(C_STANDARD 17)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY $<1:${CMAKE_SOURCE_DIR}/build/bin>)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY $<1:${CMAKE_SOURCE_DIR}/run>)
 
 add_executable(voxia src/main.c)
 target_link_libraries(${PROJECT_NAME} raylib)
