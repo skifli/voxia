@@ -35,3 +35,4 @@
 .cache
 build
 cmake*/
+run/voxia

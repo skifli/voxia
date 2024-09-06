@@ -12,5 +12,5 @@
             "label": "desktop"
         }
     },
-    "onCreateCommand": "sudo apt update && sudo apt install xorg-dev libglu1-mesa-dev ninja-build -y"
+    "onCreateCommand": "sudo apt update && sudo apt install xorg-dev libglu1-mesa-dev ninja-build clang-format -y"
 }
